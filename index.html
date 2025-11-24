@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CAJUS DEV</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.
+    min.css" integrity="sha512-DTQQ9RWC H3pGgQCwAfAIBIZ0C6xxaIWEsw9C20QeAIFt1
+    +Vegovlnee1C9QX4TctnWMn13IZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+    <div class="grid-container">
+        
+        <div class="grid-item grid-item-1">
+            <div class="theme-switch-wrapper">
+                <label class="theme-switch" for="mode-toggle">
+                    <input type="checkbox" id="mode-toggle" />
+                    <div class="slider round"></div>
+                </label>
+            </div>
+            <h3>Darkmode</h3>
+        </div>
+
+        <div class="grid-item grid-item-2">
+            <p>Lorem</p>
+            <h1>Ipsum</h1>
+            <p>dolor</p>
+        </div>
+
+        <div class="grid-item grid-item-3">
+            <p>This is a</p>
+            <h1>100%</h1>
+            <p>Placeholder</p>
+        </div>
+
+        <div class="grid-item grid-item-4">
+            <h2>Industry-leading performance per watt</h2>
+        </div>
+
+        <div class="grid-item grid-item-5">
+            
+        </div>
+
+        <div class="grid-item grid-item-6">
+            <p>Currently</p>
+            <h1>Studying</h1>
+            <p>at TH Köln, Germany</p>
+        </div>
+
+        <div class="grid-item grid-item-7">
+            <div class="background">
+                <span><i class="fa-brands fa-apple"></i>M2</span>
+            </div>
+        </div>
+
+        <div class="grid-item grid-item-8">
+            <i class="fa-solid fa-microchip"></i>
+            <h3>12-Core</h3>
+            <p>CPU</p>
+        </div>
+
+        <div class="grid-item grid-item-9">
+            <i class="fa-solid fa-memory"></i>
+            <h3>38-Core</h3>
+            <p>GPU</p>
+        </div>
+
+        <div class="grid-item grid-item-10">
+            <p>16-core</p>
+            <h1>Neural Engine</h1>
+            <p>16.8 Trillion ops/s</p>
+        </div>
+
+        <div class="grid-item grid-item-11">
+            <h1>40%</h1>
+            <p>Faster Neural Engine</p>
+        </div>
+
+        <div class="grid-item grid-item-12">
+            <h2>High-performance media engine with ProRes</h2>
+        </div>
+
+        <div class="grid-item grid-item-13">
+            <p>Second-Generation</p>
+            <h1>5 nm Technology</h1>
+        </div>
+
+        <div class="grid-item grid-item-14">
+            <h1>400 GB/s</h1>
+            <p>Memory Bandwith</p>
+        </div>
+
+
+        
+
+        <script>
+            const toggleSwitch = document.getElementById('mode-toggle');
+            const body = document.body;
+
+            function switchTheme(e) {
+                if (e.target.checked) {
+                    body.classList.add('dark-mode');
+                    console.log("Light Mode an"); // Zur Kontrolle in der Konsole
+                } else {
+                    body.classList.remove('dark-mode');
+                    console.log("Light Mode aus");
+        }
+    }
+
+    if (toggleSwitch) {
+        toggleSwitch.addEventListener('change', switchTheme);
+    } else {
+        console.error("Fehler: Schalter mit ID 'mode-toggle' nicht gefunden!");
+    }
+</script>
+
+        <footer>
+            <p>&copy;2025 "cajusdev"</p>
+        </footer>
+
+
+</body>
+
+
+
+</html>
